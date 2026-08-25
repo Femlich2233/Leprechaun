@@ -1,0 +1,9 @@
+{
+    "id":"lillysleprechaunmod",
+    "name": "Leprechaun",
+    "author": ["Femlich"],
+    "description": "Leprechaun is a mod that focuses on playing around balatro's luck mechanics, adding several new jokers and enhancements",
+    "prefix": "leper",
+    "main_file": "main.lua",
+    "version": "0.0.1"
+}
