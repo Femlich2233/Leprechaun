@@ -17,12 +17,10 @@ for _, file in ipairs(jokers_src) do
 
 end
 
-SMODS.Enhancement:take_ownership('m_lucky', {
-    calculate = function(self, context, card)
-        if context.mod_probability and context.trigger_obj == card and card.ability.modprefix_probability_add and card.ability.modprefix_probability_add > 0 then
-            return {numerator = context.numerator + card.ability.modprefix_probability_add}
-        end
-    end,
-})
+SMODS.current_mod.calculate = function(self, context)
+    if context.mod_probability and Card.is(context.trigger_obj, Card) and context.trigger_obj.ability.modprefix_probability_add and context.trigger_obj.ability.modprefix_probability_add > 0 then
+        return {numerator = context.numerator + context.trigger_obj.ability.modprefix_probability_add}
+    end
+end
 
 --#endregion

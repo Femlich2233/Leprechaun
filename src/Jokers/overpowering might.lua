@@ -9,7 +9,7 @@ SMODS.Joker {
     cost= 6,
     config= { extra = { repetitions = 1 } },
     calculate = function(self, card, context)
-        if context.repetition and context.cardarea == G.play and  context.other_card:is_suit("clubs") then
+        if context.repetition and context.cardarea == G.play and  context.other_card:is_suit("Clubs") then
             return {
                 repetitions = card.ability.extra.repetitions
             }
