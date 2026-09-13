@@ -23,7 +23,7 @@ SMODS.Joker {
                 SMODS.destroy_cards(card, nil, nil, true)
                 G.GAME.pool_flags.leper_loaded_dice_extinct = true
                 return {
-                    message = localize('k_Snake Eyes!_ex')
+                    message = localize('k_Snake_Eyes!_ex')
                 }
             else
                 return {

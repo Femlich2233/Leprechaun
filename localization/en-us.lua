@@ -1,28 +1,23 @@
 return {
     descriptions = {
         Joker = {
-            j_leper_Leprechaun = {
+            j_leper_Leprechaun         = {
                 name = 'Leprechaun',
                 text = {
-                    'Every time a {C:attention}lucky{} card',
-                    '{C:green} successfully{} triggers {C:attention} BOTH{}',
-                    'the {C:red} mult{} {C:attention} AND{} the {C:money} money{}',
-                    'increase both the lucky cards listed {C:green} probabilities{} by 1',
+                    'Whenever a scored {C:attention}Lucky{} card grants both',
+                    '{C:mult}Mult{} and {C:money}Money{}',
+                    'permanently increase that cards {C:attention}listed{} {C:green}probabilities{} by 1',
                 }
             },
-            j_leper_Hotstreak = {
+            j_leper_Hotstreak          = {
                 name = 'Hotstreak',
                 text = {
-                    '{C:green} #1# in #2#{} chance to retrigger played lucky card',
-                    '{C:green} #3# in #4#{} chance to retrigger played lucky card a second time',
-                    '{C:green} #5# in #6#{} chance to retrigger played lucky card a third time',
-                    '{C:green} #7# in #8#{} chance to retrigger played lucky card a fourth time',
-                    '{C:green} #9# in #10#{} chance to retrigger played lucky card a fifth time',
-                    '{C:green} #11# in #12#{} chance to retrigger played lucky card a sixth time',
-                    '{C:green} #13# in #14#{] chance to retrigger played lucky card a seventh time',
+                    '{C:attention}played Lucky{} cards are retriggered up to 7 times',
+                    'the first retrigger has a {C:green} #1# in #2#{} chance',
+                    'Every additional retrigger halves the chance of the next',
                 }
             },
-            j_leper_Overwhelming_Love = {
+            j_leper_Overwhelming_Love  = {
                 name = 'Overwhelming Love',
                 text = {
                     'Retrigger all',
@@ -50,7 +45,7 @@ return {
                     'played {C:diamonds}Diamond{} cards',
                 }
             },
-            j_leper_Vampire_Queen = {
+            j_leper_Vampire_Queen      = {
                 name = 'Vampire Queen',
                 text = {
                     'All cards give {X:mult,C:white}X#2#{} Mult on score,',
@@ -58,7 +53,7 @@ return {
                     'removes card {C:attention}Seal',
                 }
             },
-            j_leper_Sealed_Arcanist = {
+            j_leper_Sealed_Arcanist    = {
                 name = 'Sealed Arcanist',
                 text = {
                     '{C:attention}+#3#{} Consumable Slots',
@@ -66,7 +61,8 @@ return {
                     '{C:spectral} spectral{} card instead when discarded',
                 }
             },
-            j_leper_Sealed_Explorer = {
+            j_leper_Sealed_Explorer
+                                       = {
                 name = 'Sealed Explorer',
                 text = {
                     'retrigger all {C:attention} held in hand',
@@ -75,21 +71,21 @@ return {
                     'have a {C:green}#1# in #2#{} chance to become {C:negative}negative{}',
                 }
             },
-            j_leper_Sealed_Conqueror = {
+            j_leper_Sealed_Conqueror   = {
                 name = 'Sealed Conqueror',
                 text = {
                     'retrigger all {C:mult}Red{} seals an additional time',
                     '{C:green} #1# in #2#{} chance to retrigger {C:mult}Red{} seals a third time',
                 }
             },
-            j_leper_Sealed_Merchant = {
+            j_leper_Sealed_Merchant    = {
                 name = 'Sealed Merchant',
                 text = {
                     '{C:attention} Gold{} seals give {C:money}6${} when scored',
                     '{C:green} #1# in #2#{} chance for {C:Attention}Gold{} seals to give {C:money}30${}',
                 }
             },
-            j_leper_Jillpot = {
+            j_leper_Jillpot            = {
                 name = 'Jillpot',
                 text = {
                     'if hand is a {C:attention}Three of a Kind{}',
@@ -98,7 +94,7 @@ return {
                     'to be retriggered {C:attention}7{} times',
                 },
             },
-            j_leper_Jackpot = {
+            j_leper_Jackpot            = {
                 name = 'Jackpot',
                 text = {
                     'if hand is a {C:attention} Three of a Kind{}',
@@ -108,7 +104,7 @@ return {
 
                 }
             },
-            j_leper_Loaded_Dice = {
+            j_leper_Loaded_Dice        = {
                 name = 'Loaded Dice',
                 text = {
                     'Increase all {C:attention}listed',
